@@ -13,5 +13,4 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 COPY --from=builder /app/*.class .
-
 CMD ["java", "Calculator"]
